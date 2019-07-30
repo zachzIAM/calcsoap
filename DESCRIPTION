@@ -1,13 +1,15 @@
 Package: calcsoap
 Encoding: UTF-8
 Type: Package
-Title: What the Package Does in One 'Title Case' Line
+Title: A sample SOAP client package with embedded C++ code and Rcpp
 Version: 1.0
 Date: 2019-07-27
-Author: Your Name
-Maintainer: Your Name <your@email.com>
-Description: One paragraph description of what the package does as one or more full sentences.
-License: GPL (>= 2)
+Author: Zach Zankov
+Maintainer: zach.zankov@investecmail.com <zach.zankov@investecmail.com>
+Description: Provides wrappers around the basic operations of a calculator SOAP service.
+  The purpose of the package is to demonstrate how C++ source code generated via \code{gsoap}
+  can be embedded in an R package.
+License: MIT + file LICENSE
 Imports: Rcpp (>= 1.0.1)
 LinkingTo: Rcpp
 RoxygenNote: 6.1.1

@@ -8,4 +8,12 @@
 \description{
 One paragraph description of what the package does as one or more full sentences.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/zachzIAM/calcsoap}
+  \item Report bugs at \url{https://github.com/zachzIAM/calcsoap/issues}
+}
+
+}
 \keyword{internal}
