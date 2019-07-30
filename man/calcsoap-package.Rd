@@ -4,9 +4,11 @@
 \name{calcsoap-package}
 \alias{calcsoap}
 \alias{calcsoap-package}
-\title{calcsoap: What the Package Does in One 'Title Case' Line}
+\title{calcsoap: A sample SOAP client package with embedded C++ code and Rcpp}
 \description{
-One paragraph description of what the package does as one or more full sentences.
+Provides wrappers around the basic operations of a calculator SOAP service.
+  The purpose of the package is to demonstrate how C++ source code generated via \code{gsoap}
+  can be embedded in an R package.
 }
 \seealso{
 Useful links:
