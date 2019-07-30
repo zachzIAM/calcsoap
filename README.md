@@ -10,6 +10,10 @@
 The goal of calcsoap is to demonstrate exposing a SOAP client using
 `gsoap` to generate C++ code and embed it in an R package via `Rcpp`.
 
+The structure of the package and especially the `Makevars` files (one
+for each Windows and Linux) are intented to be used as blueprints for
+future development (i.e. BDTI).
+
 ## Installation
 
 You can install the dev version of calcsoap from

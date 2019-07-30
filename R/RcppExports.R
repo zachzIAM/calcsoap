@@ -3,26 +3,26 @@
 
 #' @export
 add <- function(a, b) {
-    .Call('_calcsoap_add', PACKAGE = 'calcsoap', a, b)
+    .Call('_calcsoapR_add', PACKAGE = 'calcsoapR', a, b)
 }
 
 #' @export
 sub <- function(a, b) {
-    .Call('_calcsoap_sub', PACKAGE = 'calcsoap', a, b)
+    .Call('_calcsoapR_sub', PACKAGE = 'calcsoapR', a, b)
 }
 
 #' @export
 mul <- function(a, b) {
-    .Call('_calcsoap_mul', PACKAGE = 'calcsoap', a, b)
+    .Call('_calcsoapR_mul', PACKAGE = 'calcsoapR', a, b)
 }
 
 #' @export
 div <- function(a, b) {
-    .Call('_calcsoap_div', PACKAGE = 'calcsoap', a, b)
+    .Call('_calcsoapR_div', PACKAGE = 'calcsoapR', a, b)
 }
 
 #' @export
 pow <- function(a, b) {
-    .Call('_calcsoap_pow', PACKAGE = 'calcsoap', a, b)
+    .Call('_calcsoapR_pow', PACKAGE = 'calcsoapR', a, b)
 }
 

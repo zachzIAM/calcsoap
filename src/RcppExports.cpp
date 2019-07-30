@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // add
 double add(double a, double b);
-RcppExport SEXP _calcsoap_add(SEXP aSEXP, SEXP bSEXP) {
+RcppExport SEXP _calcsoapR_add(SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // sub
 double sub(double a, double b);
-RcppExport SEXP _calcsoap_sub(SEXP aSEXP, SEXP bSEXP) {
+RcppExport SEXP _calcsoapR_sub(SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -31,7 +31,7 @@ END_RCPP
 }
 // mul
 double mul(double a, double b);
-RcppExport SEXP _calcsoap_mul(SEXP aSEXP, SEXP bSEXP) {
+RcppExport SEXP _calcsoapR_mul(SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -43,7 +43,7 @@ END_RCPP
 }
 // div
 double div(double a, double b);
-RcppExport SEXP _calcsoap_div(SEXP aSEXP, SEXP bSEXP) {
+RcppExport SEXP _calcsoapR_div(SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -55,7 +55,7 @@ END_RCPP
 }
 // pow
 double pow(double a, double b);
-RcppExport SEXP _calcsoap_pow(SEXP aSEXP, SEXP bSEXP) {
+RcppExport SEXP _calcsoapR_pow(SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -67,15 +67,15 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_calcsoap_add", (DL_FUNC) &_calcsoap_add, 2},
-    {"_calcsoap_sub", (DL_FUNC) &_calcsoap_sub, 2},
-    {"_calcsoap_mul", (DL_FUNC) &_calcsoap_mul, 2},
-    {"_calcsoap_div", (DL_FUNC) &_calcsoap_div, 2},
-    {"_calcsoap_pow", (DL_FUNC) &_calcsoap_pow, 2},
+    {"_calcsoapR_add", (DL_FUNC) &_calcsoapR_add, 2},
+    {"_calcsoapR_sub", (DL_FUNC) &_calcsoapR_sub, 2},
+    {"_calcsoapR_mul", (DL_FUNC) &_calcsoapR_mul, 2},
+    {"_calcsoapR_div", (DL_FUNC) &_calcsoapR_div, 2},
+    {"_calcsoapR_pow", (DL_FUNC) &_calcsoapR_pow, 2},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_calcsoap(DllInfo *dll) {
+RcppExport void R_init_calcsoapR(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

@@ -1,4 +1,4 @@
-Package: calcsoap
+Package: calcsoapR
 Encoding: UTF-8
 Type: Package
 Title: A sample SOAP client package with embedded C++ code and Rcpp
