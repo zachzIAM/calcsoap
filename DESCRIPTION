@@ -2,7 +2,7 @@ Package: calcsoap
 Encoding: UTF-8
 Type: Package
 Title: A sample SOAP client package with embedded C++ code and Rcpp
-Version: 1.0
+Version: 1.1
 Date: 2019-07-27
 Author: Zach Zankov
 Maintainer: zach.zankov@investecmail.com <zach.zankov@investecmail.com>
