@@ -1,4 +1,3 @@
-#' @import methods
 #' @import Rcpp
 #' @useDynLib calcsoapR, .registration = TRUE
 #' @keywords internal

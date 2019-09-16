@@ -2,6 +2,10 @@ CXX_STD = CXX11
 
 PKG_CXXFLAGS = -DWITH_COOKIES -DWITH_OPENSSL
 
-PKG_CPPFLAGS = -I../inst/include/ -I../inst/include/soap/
+PKG_CPPFLAGS = -I../inst/include/ -I../inst/include/soap/ 
 
 PKG_LIBS = -lssl -lcrypto
+
+# for OSX
+PKG_CPPFLAGS = -I/usr/local/opt/openssl/include $PKG_CPPFLAGS
+PKG_LIBS = -L/usr/local/opt/openssl/lib $PKG_LIBS

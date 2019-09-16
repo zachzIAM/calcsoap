@@ -3,6 +3,11 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
+//' Addition
+//' @description Add two numbers
+//' @param a numeric;
+//' @param b numeric;
+//' @return numeric; sum of a and b
 //' @export
 // [[Rcpp::export]]
 double add(double a, double b) {
@@ -14,6 +19,11 @@ double add(double a, double b) {
   return result;
 }
 
+//' Subtraction
+//' @description Subtact two numbers
+//' @param a numeric;
+//' @param b numeric;
+//' @return numeric; difference of a and b
 //' @export
 // [[Rcpp::export]]
 double sub(double a, double b) {
@@ -25,6 +35,11 @@ double sub(double a, double b) {
   return result;
 }
 
+//' Multiplication
+//' @description Multiply two numbers
+//' @param a numeric;
+//' @param b numeric;
+//' @return numeric; product of a and b
 //' @export
 // [[Rcpp::export]]
 double mul(double a, double b) {
@@ -36,6 +51,11 @@ double mul(double a, double b) {
   return result;
 }
 
+//' Division
+//' @description Divide two numbers
+//' @param a numeric;
+//' @param b numeric;
+//' @return numeric; division of a and b
 //' @export
 // [[Rcpp::export]]
 double div(double a, double b) {
@@ -47,6 +67,11 @@ double div(double a, double b) {
   return result;
 }
 
+//' Exponentiation
+//' @description Exponentiate two numbers
+//' @param a numeric;
+//' @param b numeric;
+//' @return numeric; a to the b power
 //' @export
 // [[Rcpp::export]]
 double pow(double a, double b) {
