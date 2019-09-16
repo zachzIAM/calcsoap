@@ -1,5 +1,6 @@
+#' @import methods
 #' @import Rcpp
-#' @useDynLib calcsoap
+#' @useDynLib calcsoapR, .registration = TRUE
 #' @keywords internal
 "_PACKAGE"
 
