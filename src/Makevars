@@ -7,7 +7,8 @@ PKG_CPPFLAGS = -I../inst/include/ -I../inst/include/soap/ #-I/usr/local/opt/open
 PKG_LIBS = -lssl -lcrypto #-L/usr/local/opt/openssl/lib
 
 # OPENSSL paths for OSX
-ifeq ($(uname),Darwin)
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
 	PKG_CPPFLAGS += -I/usr/local/opt/openssl/include
 	PKG_LIBS += -L/usr/local/opt/openssl/lib
 endif
