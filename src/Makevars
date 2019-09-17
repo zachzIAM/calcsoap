@@ -2,12 +2,12 @@ CXX_STD = CXX11
 
 PKG_CXXFLAGS = -DWITH_COOKIES -DWITH_OPENSSL
 
-PKG_CPPFLAGS = -I../inst/include/ -I../inst/include/soap/ -I/usr/local/opt/openssl/include
+PKG_CPPFLAGS = -I../inst/include/ -I../inst/include/soap/ #-I/usr/local/opt/openssl/include
 
-PKG_LIBS = -lssl -lcrypto -L/usr/local/opt/openssl/lib
+PKG_LIBS = -lssl -lcrypto #-L/usr/local/opt/openssl/lib
 
-# for OSX
-#ifeq ("$(uname)","Darwin")
-#	PKG_CPPFLAGS = -I/usr/local/opt/openssl/include $(PKG_CPPFLAGS)
-#	PKG_LIBS = -L/usr/local/opt/openssl/lib $(PKG_LIBS)	
-#endif
+# OPENSSL paths for OSX
+ifeq ($(uname),Darwin)
+	PKG_CPPFLAGS += -I/usr/local/opt/openssl/include
+	PKG_LIBS += -L/usr/local/opt/openssl/lib
+endif
